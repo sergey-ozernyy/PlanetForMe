@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.planetforme.R
 import com.example.planetforme.network.AvatarLoader
 
-class UserAdapter(var mUsers: MutableList<User?>): RecyclerView.Adapter<UserAdapter.UserHolder>() {
+class UserAdapter(var mUsers: List<User?>): RecyclerView.Adapter<UserAdapter.UserHolder>() {
 
     inner class UserHolder(view: View) : RecyclerView.ViewHolder(view) {
         val firstName:TextView = view.findViewById<TextView>(R.id.first_name)
